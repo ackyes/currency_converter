@@ -33,7 +33,7 @@ with dpg.window(label='Currency Convertor', width=600, height=300):
         tag=amount_id, min_value = 0.01, min_clamped=True)
     dpg.add_combo(model.currencies, default_value=model.default_from, 
         tag=from_cur_id, label="From", width=250)
-    dpg.add_combo(model.currencies, default_value=model.default_from, 
+    dpg.add_combo(model.currencies, default_value=model.default_to, 
         tag=to_cur_id, label="To", width=250)
     dpg.add_button(label="Convert", callback=convert)
     dpg.add_text("", tag=output_id)
